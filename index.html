@@ -15,24 +15,33 @@
             <h2 class="navbar-text">
                 We actually only use necessary functional cookies here. No ads or tracking cookies.
             </h2>
-            <button class="navbar-btn">Got it!</button>
+            <div class="navbar-container">
+                <button class="navbar-btn">Got it!</button>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="#">Upcoming</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Artists</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Join</a></li>/
-                <li><a href="#">You're an Artist?</a></li>/
-                <li><a href="#">Login</a></li>
-            </ul>
-            <div class="header__images">
-                <a href="#"><img src="facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#">Upcoming</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Join</a></li>/
+                    <li><a href="#">You're an Artist?</a></li>/
+                    <div class="header__images">
+                        <a href="#"><img src="facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+                    </div>
+                    <li><a href="#">Login</a></li>
+                </ul>
             </div>
         </nav>
         <div class="header-container">
@@ -344,5 +353,16 @@
                 Sign Up Now
             </button>
         </footer>
+        <script>
+                const navSlide = () => {
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.nav-container');
+                burger.addEventListener('click', () => {
+                nav.classList.toggle('show__links');
+                });
+                }
+        
+                navSlide();
+        </script>
     </body>
     </html>

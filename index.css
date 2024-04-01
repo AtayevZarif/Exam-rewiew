@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-
+    position: relative;
 }
 
 .navbar-text{
@@ -19,6 +19,28 @@
     font-size: 16px;
     font-weight: 400;
     color: white;
+    position: absolute;
+    top: 0;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    display: none;
+}
+
+.line{
+    background-color: white;
+    width: 20px;
+    height: 3px;
 }
 
 button{
@@ -46,7 +68,7 @@ button{
     background-color: #ffff00;
 }
 
-nav{
+.nav-container{
     background: #0B0B0B;
     padding: 20px;
     display: flex;
@@ -104,13 +126,8 @@ a:hover{
     color: #fff;
 }
 
-.content-main{
-    height: 1920px;
-}
-
 .content-sect{
     display: flex;
-    height: 640px;
 }
 
 .content__blue-container{
@@ -120,6 +137,7 @@ a:hover{
     justify-content: center;
     gap: 30px;
     width: 50%;
+    height: 640px;
     padding: 110px;
 }
 
@@ -207,6 +225,7 @@ a:hover{
     justify-content: center;
     gap: 30px;
     width: 50%;
+    height: 640px;
     padding: 110px;
 }
 
@@ -218,6 +237,7 @@ a:hover{
     justify-content: center;
     gap: 30px;
     width: 50%;
+    height: 640px;
     padding: 110px;
 }
 
@@ -236,12 +256,12 @@ a:hover{
     font-family: roboto;
     font-size: 68px;
     font-weight: 400;
-
 }
 
 .artists-sect{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 24px;
 }
 
@@ -352,6 +372,13 @@ a:hover{
     left: 300px;
 }
 
+.list__date{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
 footer{
     height: 280px;
     background: #0B0B0B;
@@ -367,6 +394,7 @@ footer{
     font-size: 70px;
     font-weight: 400;
     color: white;
+    text-align: center;
 }
 
 .footer-btn{
@@ -385,4 +413,118 @@ footer{
 .footer-btn:active{
     border: 0;
     background-color: #ffff00;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        height: 100px;
+    }
+    .navbar-text{
+        width: 200px;
+    }
+    .burger{
+        display: flex;
+    }
+    .nav-container{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+    ul{
+        margin: 0;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    .show__links{
+        transform: translate(-100%);
+    }
+    .header-container{
+        background-size: cover;
+        height: 500px;
+        background-repeat: no-repeat;
+        gap: 10px;
+    }
+    .header-title{
+        font-size: 25px;
+        width: 300px;
+    }
+    .content-sect{
+        flex-direction: column;
+    }
+    .content__point-container{
+        width: 100%;
+        padding: 50px;
+        border-bottom: gray solid 2px;
+    }
+    .content__blue-container{
+        width: 100%;
+        padding: 50px;
+    }
+    .content__green-container{
+        width: 100%;
+        padding: 50px;
+    }
+    .content__orange-container{
+        width: 100%;
+        padding: 50px;
+    }
+    .content-title{
+        width: 300px;
+    }
+    .content-subtitle{
+        width: 300px;
+    }
+    .content__point-title{
+        font-size: 60px;
+    }
+    .artists-main{
+        height: 2200px;
+    }
+    .artists-title{
+        width: 300px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .artists-sect{
+        flex-direction: column;
+    }
+    .artists-container-1{
+        width: 300px;
+        height: 500px;
+    }
+    .artists-container-2{
+        width: 300px;
+        height: 500px;
+    }
+    .artists-container-3{
+        width: 300px;
+        height: 500px;
+    }
+    .artists__container-subtitle{
+        width: 200px;
+    }
+    .artists__btn-container{
+        margin: 0;
+    }
+    .list-container{
+        height: 170px;
+    }
+    .list__container__basic{
+        height: 150px;
+        align-items: center;
+    }
+    .list__nickname{
+        font-size: 15px;
+    }
+    .list__action{
+        left: 150px;
+        width: 50px;
+        font-size: 13px;
+    }
+    .list__date{
+        font-size: 12px;
+    }
 }
