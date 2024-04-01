@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #282828;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.navbar-text{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+}
+
+.navbar-btn{
+    background: #FFFF02;
+    width: 100px;
+    height: 35px;
+    border-radius: 45px;
+    border: 0;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar-btn:hover{
+    border: black 2px solid;
+    background-color: #e0e000;
+}
+
+.navbar-btn:active{
+    border: 0;
+    background-color: #ffff00;
+}
+
+nav{
+    background: #0B0B0B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    -webkit-text-fill-color: white;
+    gap: 25px;
+    margin-left: 300px;
+}
+
+a{
+    font-family: roboto;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.header__images{
+    display: flex;
+    gap: 15px;
+}
+
+.header-container{
+    height: 740px;
+    background-image: url("BACKGROUND IMAGE.svg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title{
+    font-family: roboto;
+    font-size: 115px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    width: 1300px;
+}
+
+.header-subtitle{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.content-main{
+    height: 1920px;
+}
+
+.content-sect{
+    display: flex;
+    height: 640px;
+}
+
+.content__blue-container{
+    background: #4A00FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+    padding: 110px;
+}
+
+.content-title{
+    font-family: roboto;
+    font-size: 39px;
+    font-weight: 400;
+    color: white;
+    width: 330px;
+}
+
+.content-subtitle{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 415px;
+}
+
+.content-btn{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border-radius: 45px;
+    border: 0;
+    background-color: black;
+    width: 145px;
+    height: 35px;
+}
+
+.content-btn:hover{
+    border: gray 2px solid;
+}
+
+.content-btn:active{
+    border: 0;
+}
+
+.button{
+    -webkit-text-fill-color: white;
+}
+
+.content__long-btn{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    border-radius: 45px;
+    border: 0;
+    background-color: black;
+    width: 230px;
+    height: 35px;
+}
+
+.content__long-btn:hover{
+    border: gray 2px solid;
+}
+
+.content__long-btn:active{
+    border: 0;
+}
+
+.content__point-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 50%;
+}
+
+.content__point-title{
+    font-family: roboto;
+    font-size: 110px;
+    font-weight: 400;
+    color: white;
+}
+
+.content__green-container{
+    -webkit-text-fill-color: black;
+    background-color: #00FF9D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+    padding: 110px;
+}
+
+.content__orange-container{
+    -webkit-text-fill-color: black;
+    background-color: #FF8B00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+    padding: 110px;
+}
+
+.artists-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #0B0B0B;
+    -webkit-text-fill-color: white;
+    height: 955px;
+}
+
+.artists-title{
+    font-family: roboto;
+    font-size: 68px;
+    font-weight: 400;
+
+}
+
+.artists-sect{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.artists-container-1{
+    background-image: url(IMAGE\ 1.svg);
+    width: 450px;
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+
+.artists-container-2{
+    background-image: url(IMAGE\ 2.svg);
+    width: 450px;
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+
+.artists-container-3{
+    background-image: url(IMAGE\ 3.svg);
+    background-size: cover;
+    width: 450px;
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+}
+
+.artists__container-title{
+    font-family: roboto;
+    font-size: 39px;
+    font-weight: 400;
+
+}
+
+.artists__container-subtitle{
+    font-family: roboto;
+    font-size: 22px;
+    font-weight: 400;
+    width: 335px;
+}
+
+.artists__btn-container{
+    margin-right: auto;
+    margin-left: 70px;
+    display: flex;
+    gap: 15px;
+}
+
+.artists-btn{
+    width: 70px;
+    height: 70px;
+    background: #0B0B0B;
+    border: #FFFFFF80 solid 1px;
+    border-radius: 100%;
+}
+
+.list-main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+}
+
+.list-title{
+    font-family: roboto;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.list-sect{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list__container__basic{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__nickname{
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.list__action{
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 300px;
+}
+
+footer{
+    height: 280px;
+    background: #0B0B0B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-title{
+    font-family: roboto;
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer-btn{
+    width: 145px;
+    height: 35px;
+    background: #FFFF02;
+    border-radius: 45px;
+    border: 0;
+}
+
+.footer-btn:hover{
+    border: gray 2px solid;
+    background-color: #e0e000;
+}
+
+.footer-btn:active{
+    border: 0;
+    background-color: #ffff00;
+}
