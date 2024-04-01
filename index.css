@@ -412,6 +412,7 @@ footer{
     background-color: #ffff00;
 }
 
+
 @media screen and (max-width: 600px) {
     .navbar{
         height: 100px;
